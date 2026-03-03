@@ -1,0 +1,12 @@
+[Unit]
+Description=Jazz — Markdown rendering daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=__BINARY__ --port __PORT__ --bind 0.0.0.0
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

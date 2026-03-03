@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jazz.daemon</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__BINARY__</string>
+        <string>--port</string>
+        <string>__PORT__</string>
+        <string>--bind</string>
+        <string>0.0.0.0</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/jazz.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/jazz.err</string>
+</dict>
+</plist>
